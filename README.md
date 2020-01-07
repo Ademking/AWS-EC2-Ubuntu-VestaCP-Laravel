@@ -5,7 +5,7 @@ How to install VestaCP + Laravel with AWS EC2
 
 Must open these ports for vestacp : 
 
-| Type        | Port           | Cool  |
+| Type        | Port           | Source  |
 | ------------- |:-------------:| -----:|
 | UDP | 80 | 0.0.0.0/0 |
 | TCP |  80|  0.0.0.0/0
