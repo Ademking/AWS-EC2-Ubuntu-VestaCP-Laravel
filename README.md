@@ -40,3 +40,40 @@ $ bash vst-install.sh — nginx yes — phpfpm yes — apache no — named no �
 [laravel.stpl](laravel.stpl)
 
 5. restart apache2 and nginx
+
+# How to add domain in VestaCP (OVH domain)
+
+OVH :
+1. Log in to your OVH account manager
+
+2. Go to DNS server
+
+3. Add nameserver: 
+
+ns1.yourdomain.com ---> 111.111.111.111 (ip of vestacp server)
+
+ns2.yourdomain.com ---> 111.111.111.111 (ip of vestacp server)
+
+4. Go to DNS zone and add
+
+demo.yourdomain.com.    A   18.188.148.200
+	
+demo.yourdomain.com.    NS    ns1.yourdomain.com.	
+	
+demo.yourdomain.com.    NS    ns2.yourdomain.com.
+
+-------------
+
+Vesta CP
+
+Once the private nameservers registration is complete, you need to configure Vesta Control Panel.
+
+1. Add domain yourdomain.com (leave DNS Support mark checked)
+2. Go to DNS menu
+3. Click on edit under yourdomain.com
+4. Change template to child-ns
+5. Go to Packages menu
+6. Edit package called default
+7. Set ns1.yourdomain.com and ns2.yourdomain.com as nameservers
+
+After you have done all steps, you can now set all of your domain names to use ns1.yourdomain.com and ns2.yourdomain.com. Please note that it may take up to 24 hours while dns records will start working.
