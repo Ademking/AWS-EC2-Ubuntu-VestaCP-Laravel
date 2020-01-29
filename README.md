@@ -80,5 +80,8 @@ After you have done all steps, you can now set all of your domain names to use n
 
 
 # How to add SSL
-
+run: 
+source /etc/profile
+PATH=$PATH:/usr/local/vesta/bin && export PATH
+then
 Video : https://www.youtube.com/watch?v=T29GPpLbvvs
