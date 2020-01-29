@@ -77,3 +77,8 @@ Once the private nameservers registration is complete, you need to configure Ves
 7. Set ns1.yourdomain.com and ns2.yourdomain.com as nameservers
 
 After you have done all steps, you can now set all of your domain names to use ns1.yourdomain.com and ns2.yourdomain.com. Please note that it may take up to 24 hours while dns records will start working.
+
+
+# How to add SSL
+
+Video : https://www.youtube.com/watch?v=T29GPpLbvvs
